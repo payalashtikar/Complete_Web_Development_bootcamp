@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selector</title>
+
+    <style>
+        body {
+            background-color: bisque;
+            color: brown;
+            margin: 0;
+            padding: 0;
+        }
+
+/* take img from - source unflexed */
+        /* background image ki vjh se agr content brabr na dikhe to use handle krne ke liye */
+        header::before {
+            background: url('img link');
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            /* agr img ki vjh se content chhup jaye to  */
+            z-index: -1;
+            top: 0;
+            left: 0;
+
+            /* image ko light krne ke liye */
+            opacity: 0.5;
+        }
+
+        section {
+            padding: 3px;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* height: 344px; */
+            /* border: 2px groove palevioletred; */
+            justify-content: center;
+        }
+
+        /* section::before{
+            content: "this is a content";
+        } */
+
+        .navigation {
+            /* content in one line */
+            display: flex;
+            font-size: 20px;
+        }
+
+        li {
+            /* margin: auto; */
+            list-style: none;
+            padding: 5px;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item1">Home</li>
+                <li class="item2">About Us</li>
+                <li class="item3">Services</li>
+                <li class="item4">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>Welcome to coding world</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptates neque minus harum, provident
+            aperiam nostrum illo ipsum quasi deserunt inventore, tempore sapiente temporibus at ex nam assumenda
+            voluptate? Officiis sequi laboriosam minus iure.</p>
+    </section>
+    <!-- <hr> -->
+
+</body>
+
+</html>

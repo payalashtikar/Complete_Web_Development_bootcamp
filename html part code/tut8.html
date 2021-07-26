@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Creating</title>
+</head>
+
+<body>
+    <h2>this is html form tutorial</h2>
+    <form action="backend.php">
+        <!-- by using lable -->
+        <label for="name">NAME :</label>
+        <div> <input type="text" name="myName" id="name"></div><br>
+        <!-- normal-->
+        <div> Roll : <input type="text" name="myRoll"></div><br>
+        <div> E-mail : <input type="email" name="myEmail"></div><br>
+        <div>Date : <input type="date" name="myDate"></div><br>
+        <div> Bonus : <input type="number" name="myBonus"></div><br>
+        <div>Are you eligible : <input type="checkbox" name="myeligibility"></div><br>
+        <div>Gender : Male<input type="radio" name="myGender">Female<input type="radio" name="myGender">Other<input
+                type="radio" name="myGender"></div><br>
+        <div>Write about Yourself : <br><textarea name="myText" clos="20" rows="10"></textarea></div>
+        <div><input type="submit" value="Submit Now"><input type="reset now" value="Reset Now"></div>
+
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="ind">Indica</option>
+                <option value="swf">Swift</option>
+            </select>
+        </div>
+    </form>
+</body>
+
+</html>

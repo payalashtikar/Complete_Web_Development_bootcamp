@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>CSS SELECTORS</title>  
+      <style>
+        p {
+            color: blue;
+        }
+
+        /* < !-- for soloring only sing paragraph --> */
+        /* <!-- ID selector --> */
+        #redElement {
+            color: red;
+        }
+
+        /* <!-- CLASS Selector --> */
+        .greenElement {
+            color: green;
+        }
+
+        .bgYellow {
+            background-color: yellow;
+        }
+
+        /* <!-- GROUPING selector --> */
+        footer,
+        span {
+            background-color: pink;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3>CSS Selector</h3>
+    <p>this is a simple paragraph to demonstrate css selector</p>
+
+    <!-- ============================================================== -->
+    <!-- ID selector -->
+    <p id="redElement">this is another simple paragraph to demonstrate css selector</p>
+    <div>
+        <p>this is yet another simple paragraph inside div to demonstrate css selector</p>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- CLASS Selector -->
+    <p id="fourthpara" class="greenElement ">this is paragraphno fourth</p>
+
+    <!-- text background changes to yellow -->
+    <p id="fourthpara" class="greenElement bgYellow">this is paragraphno fourth</p>
+
+    <!-- ============================================================== -->
+    <!-- GROUPING selector -->
+    <span>this is span part</span>
+    <footer>
+        this is footer part
+    </footer>
+</body>
+
+</html>

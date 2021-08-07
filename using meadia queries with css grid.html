@@ -1,0 +1,91 @@
+<!-- tut 45 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meadia queries with css grid</title>
+
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+            'nav nav nav nav'
+            'section section section aside'
+            'footer footer footer footer';
+    }
+
+    @media (max-width :300px) {
+        #box1 {
+            display: block;
+        }
+    }
+
+    @media (min-width: 300px)and (max-width :500px) {
+        #box2 {
+            display: block;
+            background-color: palevioletred;
+        }
+
+        @media (min-width: 500px)and (max-width :800px) {
+            #box2 {
+                display: block;
+                background-color: yellow;
+            }
+
+            @media (min-width: 800px) {
+                #box2 {
+                    display: block;
+                    background-color: yellowgreen;
+                }
+            }
+
+            
+        }
+    }
+
+    .border-nav {
+                background-color: royalblue;
+                padding: 15px 15px;
+                border: 2px groove black;
+            }
+
+    #nav {
+        grid-area: navbar;
+    }
+
+    #section {
+        grid-area: section;
+    }
+
+    #aside {
+        grid-area: aside;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <nav class="border-nav">
+            Home About ContactUS
+        </nav>
+        <section class="border-nav">
+            Learn css
+        </section>
+        <aside class="border-nav">
+            <h4>More about us </h4>
+        </aside>
+    </div>
+    <footer class="border-nav">
+        C0pyright with payal 2021
+    </footer>
+</body>
+
+</html>

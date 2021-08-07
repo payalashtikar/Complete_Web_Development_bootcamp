@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text Shadow</title>
+
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            /* border: 2px groove red; */
+            margin: 23px 12px;
+            background-color: pink;
+
+
+            /* syntax ----- box-shadow( x , y , color) */
+            /* syntax ----- box-shadow( x , y , blur radius , color) */
+            /* syntax ----- box-shadow( x , y , blur radius , spread radius , color) */
+
+
+            /* shadow on bottom of the box */
+            box-shadow: 8px 10px palevioletred;
+
+            /* blurr shadow(x,y,blur) */
+            box-shadow: 7px 5px 9px palevioletred;
+
+            /* spread shadow */
+            box-shadow: 7px 5px 9px 12px palevioletred;
+/* =================================================================== */
+            /* shadow on top of the box */
+            /* box-shadow: -8px -10px palevioletred; */
+            
+            /* blurr shadow(x,y,blur) */
+            /* box-shadow: -7px -5px 9px palevioletred; */
+
+               /* spread shadow */
+               /* box-shadow: -7px -5px -9px -12px palevioletred; */
+
+            /* color:  palevioletred; */
+
+/* =================================================================== */
+
+            /* shadow inside box */
+            box-shadow: inset 7px 5px palevioletred;
+/* =================================================================== */
+
+ 
+            /* multiple shadows */
+            box-shadow: 7px 5px palevioletred , 12px 9px violet;
+
+        }
+
+        .card h3{
+            /* text-shadow: 1px 2px blueviolet; */
+            text-shadow:1px 2px 3px  blueviolet;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+
+            <h3>This is HTML Course</h3>
+
+            <h2>card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim veniam dicta dolorem obcaecati repellat
+                ducimus, veritatis totam. Architecto voluptatum saepe eligendi, itaque assumenda illum aperiam fuga
+                autem molestias? Dolore soluta non provident cumque cupiditate?</p>
+        </div>
+        <div class="card" id="card2">
+
+            <h3>This is CSS Course</h3>
+
+            <h2>card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim veniam dicta dolorem obcaecati repellat
+                ducimus, veritatis totam. Architecto voluptatum saepe eligendi, itaque assumenda illum aperiam fuga
+                autem molestias? Dolore soluta non provident cumque cupiditate?</p>
+
+        </div>
+        <div class="card" id="card3">
+
+            <h3>This is Web Development Course</h3>
+
+            <h2>card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim veniam dicta dolorem obcaecati repellat
+                ducimus, veritatis totam. Architecto voluptatum saepe eligendi, itaque assumenda illum aperiam fuga
+                autem molestias? Dolore soluta non provident cumque cupiditate?</p>
+
+        </div>
+    </div>
+</body>
+
+</html>

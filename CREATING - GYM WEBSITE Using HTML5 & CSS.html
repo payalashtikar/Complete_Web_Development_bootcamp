@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payal Fittness</title>
+    <!-- including / importing style.css from css folder -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* CSS Reset  */
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('img/yoga.jpg');
+            /* width: 3000px; */
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .left {
+            /* border: 2px groove red; */
+            display: inline-block;
+            position: absolute;
+            left: 50px;
+            top: 20px;
+        }
+
+        .left img {
+            width: 36px;
+            filter: invert(100%);
+            /*convert black img to white and vise vera*/
+            text-decoration: center;
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 10px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 19px;
+        }
+
+
+
+        .mid {
+            /* border: 2px groove red; */
+            display: block;
+            width: 50%;
+            margin: 29px auto;
+        }
+
+        .right {
+            /* border: 2px groove red; */
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 43px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            /*in one line*/
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: darkred;
+            text-decoration: none;
+            /*avoid underline */
+            padding: 34px;
+        }
+
+        .navbar li a :hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            /*underline lagane ke liye (after visiting)*/
+            color: gray;
+            
+        }
+
+        .btn {
+            margin: 0px 9px;
+            color: darkred;
+            background-color: palevioletred;
+            border: 2px groove violet;
+            border-radius: 8px;
+            font-size: small;
+            cursor: pointer;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .btn :hover {
+            background-color: black;
+
+            color: darkgoldenrod;
+        background-color: darkturquoise;
+        border: 3px groove navy;
+        }
+
+        .container {
+            margin: 45px 45px;
+            /*box sizing*/
+            padding: 2px 2px;
+            width: 33%;
+            /* border: 2px groove white; */
+            border-radius: 8px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 300px;
+            padding: 10px;
+            border: 2ps groove black;
+            margin: 11px auto;
+            font-size: 12px;
+            border-radius: 5px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .container h1 {
+            text-align: center;
+            color: white;
+            font-size: 30px;
+        }
+
+        .container button {
+            display: block;
+            width: 23%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <!-- I am in left -->
+            <img src="img/logo1.jpg" alt="">
+            <div>Payal Fitness</div>
+
+        </div>
+        <div class="mid">
+            <!-- mid box for navigation -->
+            <!-- I am in mid -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Service</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- riht box for buttonms -->
+            <!-- I am in right -->
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the best Gym of Nagpur</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality ">
+            </div>
+            <!-- <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email-Id ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Contact No. ">
+            </div> -->
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

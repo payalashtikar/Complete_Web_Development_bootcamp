@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container {
+            height: 344px;
+            width: 100%;
+            border: 2px groove black;
+            /* initialized the container as flex container */
+            display: flex;
+
+            /* flex properties for flex container */
+            /*by default row*/
+            /* flex-direction: row; */
+            /* flex-direction: column; */
+
+            /*reverse order*/
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+
+            /* if we want to wrap our data/item */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            /* this is shorthand for flex_direction and flex wrap(in one line ) */
+            /* flex-flow: row-reverse wrap; */
+
+
+            /* justify content will justify the content in horizontal direction */
+            /*center align*/
+            /* justify-content: center; */
+            /*same space betwn boxes*/
+            /* justify-content: space-between; */
+            /*starting , between and ending space should be same */
+            /* justify-content: space-evenly; */
+            /*spaces same at left and right direction of theeach boxes*/
+            /* justify-content: space-around; */
+
+
+            /* justify content will justify the content in vertical direction */
+
+            /*vertically center*/
+            /* align-items: center; */
+            /*bottom*/
+            /* align-items: flex-end; */
+            /*top*/
+            /* align-items: flex-start; */
+
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+            background-color: plum;
+            border: 2px groove purple;
+            margin: 10px;
+            padding: 3px;
+        }
+
+        /* flex properties for flex items */
+        #item-1 {
+            /* jiska oredr value jyada rhega wo box first position pe ayega */
+            /* higher the oredr,later it shows up in the container */
+            /* order: 2; */
+
+            /* flex-grow: 3; */
+        }
+
+        #item-2 {
+            /* order: 3; */
+            /* flex-grow: 2; */
+
+            /*chhota hona*/
+            /* flex-shrink: 3; */
+
+            /* when flex direction is set to row flex basis : will control width */
+            /* when flex direction is set to colum flex basis : will control height */
+            flex-basis: 400px;
+
+
+        }
+
+        #item-3 {
+            /* order: 4; */
+            /* flex-grow: 1; */
+
+
+            /* shorthand for- flex grow , flex shrink,flex basis */
+            /* flex: 2 2 344px; */
+
+
+            /* align-self: flex-end; */
+            /* align-self: flex-start; */
+            /* align-self: center; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is Flexbox</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <!-- <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Six Box</div> -->
+    </div>
+
+</body>
+
+</html>

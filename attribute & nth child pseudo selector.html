@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute and nth child pseudo selector</title>
+    <style>
+        .container {
+            display: block;
+            margin: auto;
+            width: 230px;
+        }
+
+        input {
+            display: block;
+        }
+
+        input[type="text"] {
+            padding: 25px;
+            border: 2px groove violet;
+        }
+
+        input[type=email] {
+            color: purple;
+            border: 2px groove palegoldenrod;
+        }
+
+        a[target] {
+            font-size: 34px;
+            color: peru;
+        }
+
+        a[target='_self'] {
+            font-size: 34px;
+            color: plum;
+        }
+
+
+        /* this will apply css for third child */
+        /* li:nth-child(3) {
+            color: cyan;
+        } */
+
+        /* agr hm chahte h ki hr dusre no ke child pe aplly ho  */
+        /* li:nth-child(2n+0) {
+            color: rgb(112, 41, 226);
+        } */
+
+        li:nth-child(odd child) {
+            color: rgb(230, 17, 63);
+        }
+
+        /* li:nth-child(even child) {
+            color: rgb(19, 192, 77);
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- we has been wrote here (target="_blank") by this the link will open on next web page -->
+        <h1><a href="http://google.com" target="_blank">Go to Google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">Go to facebook</a></h1>
+
+        <form action="" class="form control">
+            <input type="text" placeholder="Enter Your Name">
+            <input type="password" placeholder="Enter Your Password">
+            <input type="text" placeholder="Enter Your Email">
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <ul>
+            <li class="item" id="item-1">Item_1</li>
+            <li class="item" id="item-2">Item_2</li>
+            <li class="item" id="item-3">Item_3</li>
+            <li class="item" id="item-4">Item_4</li>
+            <li class="item" id="item-5">Item_5</li>
+            <li class="item" id="item-6">Item_6</li>
+            <li class="item" id="item-7">Item_7</li>
+            <li class="item" id="item-8">Item_8</li>
+            <li class="item" id="item-9">Item_9</li>
+            <li class="item" id="item-10">Item_10</li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>

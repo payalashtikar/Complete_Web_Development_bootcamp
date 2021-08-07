@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selector</title>
+    <style>
+        h1 {
+            background-color: violet;
+            color: red;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* selecting paragraph which is in div  */
+        /* if p is contained by any li which is contained by div */
+        /* div li p {
+            color: red;
+            font-weight: bold;
+            background-color: rosybrown;
+        } */
+
+
+
+        /* if p is right inside div then this css will apply */
+        /* this will affect on direct child of div(sbse chhota child) */
+        /* div>p {
+            background-color: wheats;
+        } */
+
+
+        /* outer paragraph */
+        /* p{
+            background-color: aquamarine;
+        } */
+
+
+        /* if p is right aftr div ie. p is in the next sibling of div */
+        /* affect on previous paragraph of p  */
+        /* div + p{
+                    background-color: yellow;
+                } */
+                
+    </style>
+</head>
+
+<body>
+    <h1>More on CSS Selector</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>this is first para in li</p>
+                </li>
+
+            </ul>
+            <p>This is first paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is outer paragraph</p>
+
+</body>
+
+</html>

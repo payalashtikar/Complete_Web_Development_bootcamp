@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    .container {
+        border: 5px groove violet;
+        background-color: blueviolet;
+        padding: 35px;
+        margin: 35px;
+        width: 555px;
+    }
+
+    a {
+        text-decoration: none;
+        /*it avoids link(underline) of read more*/
+        color: black;
+        /*both button convert are in black*/
+    }
+
+    /* it changes the cursor color when it goes on text */
+    a:hover {
+        color: rgb(13, 14, 13);
+        background-color: rgb(207, 43, 43);
+    }
+
+    /* if we click on link or visit then it follows below property */
+    a:visited {
+        background-color: cadetblue;
+    }
+
+    a:active {
+        background-color: darkblue;
+    }
+
+
+    .btn:hover {
+        color: darkgoldenrod;
+        background-color: darkturquoise;
+        border: 3px groove navy;
+
+    }
+
+    .btn {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: burlywood;
+        padding: 6px;
+        /*bcz of it the text which is in button form in center*/
+        border: none;
+        /*it avoids border of both buttons*/
+        cursor: pointer;
+        /*it displays cirsor on both*/
+        font-size: 12px;
+        /*increases font size*/
+        border-radius: 4px;
+        /*button shape(curve)*/
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors and moreb designing</title>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel natus facilis reprehenderit laborum corporis
+            dolorem, nihil animi, praesentium harum exercitationem unde et eaque in rem amet sequi possimus quia magnam
+            repellendus! Odit, quam dignissimos!</p>
+
+        <a href="https://google.com" class="btn">Read More</a>
+
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+
+</html>

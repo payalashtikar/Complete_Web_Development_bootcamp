@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+</head>
+<!-- concept in box ---(1.margine(2.border(3.padding))) -->
+
+<style>
+    *{
+        box-sizing: border-box;
+        margin:0;
+
+    }
+    .container {
+        width: 400px;
+        height: 200px;
+        background-color: burlywood;
+        border: 5px groove rgb(179, 76, 17);
+
+
+        /* padding shown the spaces , it can be center , left , right depends on us  */
+        /* we can set padding/marginr fro top,bottom,left,right */
+        /* padding: 50px; */
+        /* padding-top: 50px; */
+        /* padding-bottom: 50px; */
+        /* padding-right: 50px; */
+        /* padding-left: 50px; */
+
+        /* padding:20px 23px 40px 45px;  */
+        /*padding/margin=top,right,bottom,left; */
+
+        padding: 40px 20px; /* paddiing:y(top/bottom) x(left/right); */
+
+        /* gap between box */
+        margin: 10px 5px;
+     
+
+border-radius: 15px;
+
+    }
+
+    body{
+        background-color: skyblue;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h3>this is heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Aspernatur officiis veniam, consequatur numquam aperiam ducimus dicta!
+            Magni placeat recusandae eveniet quia. Accusamus, soluta!</p>
+    </div>
+
+    <div class="container">
+        <h3>this is heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Aspernatur officiis veniam, consequatur numquam aperiam ducimus dicta!
+            Magni placeat recusandae eveniet quia. Accusamus, soluta!</p>
+    </div>
+
+    <div class="container">
+        <h3>this is heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Aspernatur officiis veniam, consequatur numquam aperiam ducimus dicta!
+            Magni placeat recusandae eveniet quia. Accusamus, soluta!</p>
+    </div>
+
+</body>
+
+</html>

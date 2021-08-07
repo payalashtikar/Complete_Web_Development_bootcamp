@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and keyframes</title>
+    <style>
+        .container {
+            background-color: bisque;
+        }
+
+        div h2 {
+            text-shadow: 1px 2px 3px blue;
+
+        }
+
+        .box {
+            background-color: plum;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            text-align: center;
+            box-shadow: 5px 4px darkviolet;
+
+            /* animation work start from below */
+            animation-name: payal;
+            animation-name: payal1;
+
+            animation-duration: 2s;
+            /* animation will continue till count 3 */
+            animation-iteration-count: 3;
+
+            /* if we dont want to stop or provide some limit then */
+            animation-iteration-count: infinite;
+
+            animation-fill-mode: forwards;
+            /* animation-fill-mode: alternate; */
+
+            /* slow to fast */
+            /* animation-timing-function: ease-in; */
+
+            /* fast to slow */
+            animation-timing-function: ease-in-out;
+
+            /* slow fast slow */
+            animation-timing-function: ease-in-out;
+
+            /* starting delay then animation will start */
+            animation-delay: 2s;
+
+            animation-direction: alternate;
+            /* animation-direction: alternate-reverse; */
+            /* animation-direction: unset; */
+
+/* ================================================================================================== */
+
+            /* shorthand for animation */
+            /* animation: animation-name animation-duration animation-timing-function
+             animation-delay animation-iteration-count animation-fill-mode; */
+             /* animation: payal1 4s ease-in-out 2s 5 forwards; */
+
+        }
+
+        @keyframes payal {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 800px;
+            }
+        }
+
+
+        @keyframes payal1 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+
+            75% {
+                top: 250px;
+                left: 250px;
+            }
+
+            100% {
+                top: 0px;
+                left: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>this is a box</h2>
+        </div>
+    </div>
+</body>
+
+</html>

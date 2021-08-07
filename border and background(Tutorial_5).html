@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>height , width , border and background</title>
+</head>
+<style>
+    #firstpara {
+        background-color: chartreuse;
+        height: 100px;
+        width: 455px;
+        border-width: 5px;
+        border-color: coral;
+
+        border-style: groove;
+
+        /* border curving */
+        border-radius: 15px;
+
+        /*  or --border width:5px coral */
+
+    }
+
+    #secondpara {
+        background-color: grey;
+        height: 100px;
+        width: 455px;
+        border-top: 5px solid red;
+        border-right: 5px groove palevioletred;
+        border-left: 5px groove lawngreen;
+        border-bottom: 5px solid blue;
+
+        /* provide curve radius in single way  */
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+
+    }
+
+    #thirdpara {
+        height: 100px;
+        width: 455px;
+
+        /* setting up backgrund image  */
+        background-image: url();
+        border: 5px groove blue;
+
+        /* if your image is repeated in x and y axix */
+        /* repeated on x axis */
+        /* background-repeat:repeat-x; */
+
+        /* repeated on y axis */
+        /* background-repeat:repeat-y; */
+
+        /* background-repeat:no-repeat; */
+
+
+
+        /* background-position: center:center; */
+        /* background-position: center:top; */
+        /* background-position: center:left; */
+        /* background-position: top:right; */
+        /* background-position: center:right; */
+        
+
+    }
+</style>
+
+<body>
+    <h3>this is heading</h3>
+    <p id="firstpara">this is paragraph</p>
+
+    <h3>this is second heading</h3>
+    <p id="secondpara">this is second paragraph</p>
+
+    <h3>this is second heading</h3>
+    <p id="thirdpara">this is third paragraph</p>
+</body>
+
+</html>

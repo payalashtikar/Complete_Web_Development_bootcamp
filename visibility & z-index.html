@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+    <style>
+        .box {
+            width: 170px;
+            height: 170px;
+            border: 2px groove black;
+        }
+
+        #box1 {
+            background-color: red;
+            position: relative;
+            top: 49px;
+
+            z-index :35;
+
+        }
+
+        #box2 {
+            /* visibility ki default value visible hoti hai  */
+            /* visibility: visible; */
+
+            /* visibility: hidden; */
+            /*it hides the element but its space remains reserved doesnt hide*/
+
+            /* agr hme hide bhi krna ho or space bhi hide ho jaye to use below */
+            /* display: none; */
+
+
+            /* if ek ke upr ek box aajaye to konsa upr dikhega ye z-index specify krti hai */
+            /* and it works on position attribute(relative,absolute,fixed,sticky) */
+            /* static position me z-index kam nhi krega */
+            /* jiska bhi z-index jyada hai wo upr dikhega */
+
+            position: relative;
+            top: 34px;
+
+            z-index :34;
+            
+            background-color: blue;
+        }
+
+        #box3 {
+            background-color: red;
+        }
+
+        #box4 {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- type as  div.box#box$*4 -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+
+</html>
